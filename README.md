@@ -26,6 +26,8 @@ This notebook takes two input files (1 listing mentees, 1 listing mentors) and p
 
 Because the Hungarian solver considers every possible pairing at once, it guarantees the best overall outcome: you may see some individual mentee scores dip (versus a purely greedy, one-by-one approach), but the _total_ compatibility sum is as large as possible under the exact capacity constraints. That way, even if there aren’t enough slots for every mentee, you know you’re getting the strongest pool of matches overall.
 
+![Mentor–Mentee Match Graph](https://github.com/ammiellewb/techplus-s25-mentorship/blob/main/Mentor%E2%80%93Mentee%20Match%20Graph.png "Mentor–Mentee Match Graph")
+
 ---
 
 **Tip:** If you ever need to tweak what “compatibility” means (eg. by weighting certain questions more heavily), you can adjust the feature stacking step before the similarity calculation and rerun the notebook.
